@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawal Ridwan - Profile Card</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+  </head>
+  <body>
+    <article class="card__container" data-testid="test-profile-card">
+      <!-- avatar -->
+      <section class="avatar__container">
+        <img
+          src="https://res.cloudinary.com/daetxhtss/image/upload/v1760711118/passport_2_1_tufnqp.webp"
+          data-testid="test-user-avatar"
+        />
+      </section>
+
+      <!-- name and time  -->
+      <div class="profile__content">
+        <header class="name__time">
+          <p data-testid="test-user-name">Lawal Ridwan</p>
+          <p class="time_in_ms" data-testid="test-user-time"></p>
+        </header>
+
+        <!-- Biography -->
+        <section class="bio__data">
+          <p data-testid="test-user-bio">
+            I am Ridwan, a front-end developer with almost a year of creating
+            responsive and accessible web applications, turning complex designs
+            into functional user experiences. I am committed to continous
+            professional development and collaboration and looking forward to
+            opportunites where i can contribute my skills.
+          </p>
+        </section>
+
+        <!-- hobies and dislikes -->
+        <div class="hobbies__dislikes__container">
+          <!-- hobbies -->
+          <section>
+            <p>Hobbies</p>
+            <ul data-testid="test-user-hobbies">
+              <li>Learning Languages</li>
+              <li>Playing games</li>
+            </ul>
+          </section>
+
+          <!-- dislikes -->
+          <section>
+            <p>Dislikes</p>
+            <ul data-testid="test-user-dislikes">
+              <li>Dust (Alergy)</li>
+              <li>Public places</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- socials -->
+        <section class="socials__container">
+          <p>Socials</p>
+
+          <ul data-testid="test-user-social-links">
+            <li data-testid="test-user-social-twitter">
+              <span>Twitter: </span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/ibndev"
+                >https://x.com/ibnCodes</a
+              >
+            </li>
+            <li data-testid="test-user-social-github">
+              <span>Github: </span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/redot2468"
+                >https://github.com/redot2468</a
+              >
+            </li>
+
+            <li data-testid="test-user-social-linkedin">
+              <span>linkedin: </span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ridwan-lawal-162284257/"
+                >https://www.linkedin.com/in/ridwan-lawal</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
