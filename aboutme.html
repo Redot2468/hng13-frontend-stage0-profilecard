@@ -13,7 +13,7 @@
       </header>
 
       <main class="about_me_main">
-        <section class="bio">
+        <section class="bio" data-testid="test-about-bio">
           <h2>Bio</h2>
           <p>
             I am Ridwan, a front-end developer with almost a year of creating
@@ -26,7 +26,7 @@
 
         <section class="goals">
           <h2>Goals in HNG</h2>
-          <p>
+          <p data-testid="test-about-goals">
             My goal in HNG is to improve my frontend development skills by
             building real world problems, to learn how to collaborate with other
             front-end developers and other key people in team like designers,
@@ -35,12 +35,28 @@
           </p>
         </section>
 
-        <section class="goals">
+        <section class="areas">
           <h2>Areas of low confidence</h2>
-          <ul>
+          <ul data-testid="test-about-confidence">
             <li>Collaboration</li>
             <li>Team work / communication</li>
           </ul>
+        </section>
+
+        <section class="note_to_self">
+          <h2>Note to future self</h2>
+          <p data-testid="test-about-future-note">
+            Document your thought process, goals or struggles and remind
+            yourself of lessons learned.
+          </p>
+        </section>
+
+        <section class="extra__thoughts">
+          <h2>Extra-thoughts</h2>
+          <p data-testid="test-about-extra">
+            I'm currently reading <b>"The Pragmatic Programmer"</b>, You should
+            also give it a try - good read :)
+          </p>
         </section>
       </main>
     </div>
