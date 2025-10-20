@@ -68,7 +68,7 @@ function handleValidation(e) {
 
     setTimeout(() => {
       successEl.textContent = "";
-    }, 10000);
+    }, 6000);
   }
 }
 
