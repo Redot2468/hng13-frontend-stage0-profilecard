@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <article class="card__container">
+      <h1 class="contact__header">Contact me</h1>
+
+      <form action="" autocomplete="on" class="contact__form">
+        <div>
+          <label for="fullName">Full name</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            autocomplete="name"
+            placeholder="Enter your full name"
+            data-testid="test-contact-name"
+          />
+          <p data-testid="test-contact-error-name"></p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="abc@gmail.com"
+            data-testid="test-contact-email"
+          />
+          <p data-testid="test-contact-error-email"></p>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            autocomplete="name"
+            placeholder="Subject e.g I want to know more about you"
+            data-testid="test-contact-subject"
+          />
+          <p data-testid="test-contact-error-subject"></p>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            placeholder="Enter your message here"
+            data-testid="test-contact-message"
+          ></textarea>
+          <p data-testid="test-contact-error-message"></p>
+        </div>
+        <p data-testid="test-contact-success" class="success__message"></p>
+
+        <button class="submit__btn" data-testid="test-contact-submit">
+          Send Message
+        </button>
+      </form>
+    </article>
+
+    <script src="/contact.js"></script>
+  </body>
+</html>
