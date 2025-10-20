@@ -45,7 +45,7 @@ function handleValidation(e) {
 
   if (messageEl.value.length < 10) {
     showErrors(messageEl, "Message should have 10 or more characters");
-    isMessageValid = true;
+    isMessageValid = false;
   } else {
     clearErrors(messageEl);
     isMessageValid = true;
