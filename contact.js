@@ -59,7 +59,16 @@ function handleValidation(e) {
     successEl.textContent = "Message successfully sent!";
 
     // e.target.submit() - TODO: To submit form, but this is just a mock functionality - Ridwan
-    setTimeout(() => (successEl.textContent = ""), 10000);
+    setTimeout(() => {
+      fullNameEl.value = "";
+      emailEl.value = "";
+      messageEl.value = "";
+      subjectEl.value = "";
+    }, 2000);
+
+    setTimeout(() => {
+      successEl.textContent = "";
+    }, 10000);
   }
 }
 
