@@ -48,7 +48,7 @@ function handleValidation(e) {
     isMessageValid = true;
   } else {
     clearErrors(messageEl);
-    isMessageValid = true;
+    isMessageValid = false;
   }
 
   console.log(isEmailValid);
